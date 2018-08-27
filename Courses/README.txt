@@ -1,0 +1,1 @@
+This folder contains data science / machine learning python notebooks from different courses along with there data sets.
