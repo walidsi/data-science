@@ -1,0 +1,13 @@
+setwd("c:/R")
+Auto=read.csv("Auto.csv",header=T,na.strings ="?")
+fix(Auto)
+dim(Auto)
+Auto=na.omit(Auto)
+attach(Auto)
+plot(cylinders , mpg)
+cylinders =as.factor(cylinders )
+plot(cylinders , mpg , col="red", varwidth =T, xlab="cylinders ", ylab="MPG")
+hist(mpg ,col=2,breaks =15)
+pairs(Auto)
+summary (Auto) 
+
