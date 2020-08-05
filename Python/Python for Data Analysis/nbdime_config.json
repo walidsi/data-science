@@ -1,0 +1,12 @@
+{
+	"Extension": {
+		"Ignore": {
+			"/cells/*/outputs": true,
+			"/cells/*/attachments": true,
+			"/cells/*/metadata": true
+		},
+		"metadata": true,
+		"outputs": true,
+		"sources": true
+	}
+}
