@@ -1,0 +1,25 @@
+// Is the notebook running in Google Colab
+
+import os
+if(os.getcwd() == "/content"): # if running notebook in colab
+    from google.colab import drive
+    drive.mount('/content/drive')
+    os.chdir("/content/drive/My Drive/Colab Notebooks")
+else:
+    os.chdir("d:/github/Data-Science/Python/Python for Data Analysis/")
+%pwd
+
+
+// Using Beyond Compare for diff of files in Git
+
+"C:\Program Files\Beyond Compare 4\BCompare.exe"
+
+git config --global diff.tool bc
+git config --global difftool.bc.path "c:/Program Files/Beyond Compare 4/bcomp.exe"
+
+
+// Configure local jupyter to accept connection from Google Colab
+
+pip install --upgrade jupyter_http_over_ws>=0.0.7 && jupyter serverextension enable --py jupyter_http_over_ws
+
+jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0 --notebook-dir=d:/github/Data-Science/Python/Python%20for%20Data%20Analysis/
