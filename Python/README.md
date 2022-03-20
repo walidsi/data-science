@@ -1,1 +1,1 @@
-# Python code snippets from different books.
+# Python for Data Analysis book code.
